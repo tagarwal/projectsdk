@@ -1,2 +1,0 @@
-# projectsdk
-sample sdk
