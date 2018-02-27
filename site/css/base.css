@@ -1,0 +1,161 @@
+html {
+    overflow-y: scroll;
+    font-size:100%;
+}
+
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: #423e3e;
+  padding:0;
+  margin:0;
+  font-family:"Noto Serif","DejaVu Serif",serif;
+  font-weight:400;
+  font-style:normal;
+  line-height:1;
+  position:relative;
+  cursor:auto;
+  tab-size:4;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing:antialiased
+}
+
+pre {
+  color: #000;
+}
+
+/* remove antialiasing on the menubar */
+.navbar-header, .navbar-nav {
+    font-family:"Open Sans","DejaVu Sans",sans-serif;
+    -webkit-font-smoothing: initial;
+    font-size: 1.1em;
+}
+
+a {
+ white-space:pre-wrap;
+ word-break:break-all;
+}
+
+/*
+  asciidoc fixups
+  - overrides on top of bootstrap stylesheet
+  - spacing, font sizes, borders, colors
+*/
+.docs-header {
+  padding: 0px 0px 25px;
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+.docs-header p {
+  font-weight: 300;
+  line-height: 1.5;
+}
+.docs-header div.container {
+  position: relative;
+  padding-left:0px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .docs-header {
+    font-size: 21px;
+    text-align: center;
+  }
+  .docs-header h1 {
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+@media (min-width: 992px) {
+  .docs-header h1,
+  .docs-header p {
+    margin-right: 380px;
+  }
+}
+
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,h7{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;text-rendering:optimizeLegibility;margin-top:.5em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small, h7 small{font-size:60%;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6,h7{font-size:1em}
+hr{border:solid #ddddd8;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede; table-layout: fixed}
+table thead,table tfoot{background:#f7f8f7;font-weight:bold}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;color:rgba(0,0,0,.8);text-align:left}
+table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6;}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em;}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,h7{line-height:1.2;word-spacing:-.05em}
+h7{
+ display:block;
+}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p{margin-bottom:1.25rem}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility; word-wrap: break-word;}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+.subheader, #content #toctitle, .admonitionblock td.content > .title, .exampleblock > .title, .imageblock > .title, .videoblock > .title, .listingblock > .title, .literalblock > .title, .openblock > .title, .paragraph > .title, .quoteblock > .title, .sidebarblock > .title, .tableblock > .title, .verseblock > .title, .dlist > .title, .olist > .title, .ulist > .title, .qlist > .title, .hdlist > .title, .tableblock > caption { line-height: 1.4; color: #666; font-weight: 300; margin-top: 0.2em; margin-bottom: 0.5em; font-weight: bold}
+.sect1 { padding-bottom: 1.25em; }
+.sect1 + .sect1 { border-top: 1px solid #ebebeb; padding-top: 3em; }
+pre{overflow:visible}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9); background-color: #f7f7f8}
+pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+pre { white-space:pre-wrap; word-break:normal; border: 0px !important;}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;padding:1em;font-size:.87em}
+.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+table tr th,table tr td{padding:.5625em .625em;font-size:1.0625rem;color:rgba(0,0,0,.8)}
+.literalblock pre,.listingblock pre:not(.highlight),.listingblock pre[class="highlight"],.listingblock pre[class^="highlight "],.listingblock pre.CodeRay,.listingblock pre.prettyprint{background:#f7f7f8}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;padding:1em;font-size:.87em}
+table.tableblock{width:100%;}
+table.tableblock p {font-size: 0.9em;}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+/*.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #ddddd8;color:rgba(0,0,0,.6)}*/
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+
+h2 {
+    margin-top: 0;
+}
+
+/* main layout */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  position: relative;
+}
+#wrap>div.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#push,
+#footer {
+  position: absolute;
+  bottom: 0px;
+  height: 60px;
+}
+#footer {
+  background-color: #f5f5f5;
+  padding: 0;
+}
+#footer p {
+  margin: 0;
+  line-height: 20px;
+}
+#footer>div.container {
+    position: relative;
+    top:20px;
+}
+#footer>div.container>p {
+    font-family:"Open Sans","DejaVu Sans",sans-serif;
+    font-size: 0.95em;
+}
+.container .credit {
+  margin: 20px 0;
+}

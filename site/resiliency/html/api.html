@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+<p><font color="#dc143c" face="verdana">Please select the Resiliency Features for your method</font></p>
+
+<form>
+  <input type="checkbox" name="CircuitBreaker" onclick="revealProperty(this);">
+  <label for="CircuitBreaker">CircuitBreaker</label>
+
+  <input type="checkbox" name="Bulkhead" onclick="revealProperty(this);">
+  <label for="Bulkhead">Bulkhead</label>
+
+  <input type="checkbox" name="Retry" onclick="revealProperty(this);">
+  <label for="Retry">Retry</label>
+
+  <input type="checkbox" name="Cache" onclick="revealProperty(this);">
+  <label for="Cache">Cache</label>
+
+  <input type="checkbox" name="RollingWindow" onclick="revealProperty(this);">
+  <label for="RollingWindow">RollingWindow</label>
+
+  <input type="checkbox" name="Fallback" onclick="revealProperty(this);">
+  <label for="Fallback">Fallback</label>
+
+  <input type="radio" name="run" value="Sync" id="sync">Run in Sync mode
+
+  <input type="radio" name="run" value=Async" id="async">Run in Async mode
+
+  <br>
+  <br>
+  <input type="button" onclick="showCode()" value="submit"/>
+  <br>
+  <p id="displayProperty"></p>
+</form>
+<p><font face="verdana" color="black">Sample Code: <br><span id="sampleCode"></span></font></p>
+</body>
+</html>

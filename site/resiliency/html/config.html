@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/config_generator.js"></script>
+</head>
+<body>
+
+<p><font color="#dc143c" face="verdana">Please select the Resiliency Features to externalize</font></p>
+
+<form>
+    <input type="checkbox" name="CircuitBreaker" onclick="revealProperty(this);">
+    <label for="CircuitBreaker">CircuitBreaker</label>
+
+    <input type="checkbox" name="Bulkhead" onclick="revealProperty(this);">
+    <label for="Bulkhead">Bulkhead</label>
+
+    <input type="checkbox" name="Retry" onclick="revealProperty(this);">
+    <label for="Retry">Retry</label>
+
+    <input type="checkbox" name="Cache" onclick="revealProperty(this);">
+    <label for="Cache">Cache</label>
+
+    <input type="checkbox" name="RollingWindow" onclick="revealProperty(this);">
+    <label for="RollingWindow">RollingWindow</label>
+
+    <br>
+    <br>
+    <input type="button" onclick="showConfig()" value="submit"/>
+    <br>
+</form>
+<p><font face="verdana" color="black">Sample Configuration file: <br><span id="sampleCode"></span></font></p>
+</body>
+</html>

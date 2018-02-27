@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Javadocs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="J4C">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+    <link href="css/bootstrap_yeti.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+    <link href="css/bootstrap-toc.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+  </head>
+  <body data-spy="scroll" data-target="#toc" data-offset="100" onload="prettyPrint()">
+    <div id="wrap">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">J4C</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="samples.html">Samples</a></li>
+            <li><a href="starter/">Project Starter</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="getting-started.html">Getting Started</a></li>
+                <li><a href="developer-guide.html">Developer Guide</a></li>
+                <li><a href="javadocs.html">Javadocs</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Older Versions<b class="caret"></b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="">
+
+        <div class="docs-header" id="content" style="padding-left:0; padding-right:0">
+          <div class="container">
+            <h1>Javadocs</h1>
+            
+          </div>
+        </div>
+
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Library</th>
+<th class="tableblock halign-left valign-top">Package</th>
+<th class="tableblock halign-left valign-top">Javadoc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">J4C Core APIs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">io.j4c.*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="apidocs/index.html?overview-summary.html" target="_blank" rel="noopener">javadocs</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Java EE APIs in J4C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">javax.*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="apidocs/index.html?overview-summary.html" target="_blank" rel="noopener">javadocs</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open Tracing</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">io.opentracing.*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://github.com/opentracing/opentracing-java" target="_blank" rel="noopener">javadocs</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prometheus Client</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">io.prometheus.*</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://prometheus.io/client_java/" target="_blank" rel="noopener">javadocs</a></p></td>
+</tr>
+</tbody>
+</table>
+
+            </div>
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">Copyright &copy; 2017 | All Rights Reserved.</a></p>
+      </div>
+    </div>
+    </div>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prettify.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#toc a').click(function(){
+                $('html, body').animate({
+                      scrollTop: $($(this).attr('href')).offset().top - 65
+                  }, 10);
+                });
+            });
+    </script>
+  </body>
+</html>

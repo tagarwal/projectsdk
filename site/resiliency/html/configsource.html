@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/configsource_generator.js"></script>
+</head>
+<body>
+
+<p><font color="#dc143c" face="verdana">Please select config source that will be used to store the externalized configuration
+</font></p>
+
+<form>
+    <input type="radio" name="location" value="etcd" id="etcd">Read from etcd
+
+    <input type="radio" name="location" value=file" id="file">Read from a file on classpath
+
+    <input type="radio" name="location" value="url" id="url">Read from an url
+
+    <input type="radio" name="location" value="configmap" id="configmap">Read from Kubernetes ConfigMap
+
+    <br>
+    <br>
+    <input type="button" onclick="showFile()" value="submit"/>
+    <br>
+    <p id="displayProperty"></p>
+</form>
+<p><font face="verdana" color="black">Sample configsource.conf: <br><span id="sampleCode"></span></font></p>
+</body>
+</html>
